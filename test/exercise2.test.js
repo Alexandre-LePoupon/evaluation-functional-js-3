@@ -1,11 +1,15 @@
 const expect = require('chai').expect;
 const program = require('../src/exercise2');
 
-describe(`${program.title}`, function () {
+describe.only(`${program.title}`, function () {
 
   it('Function yolo with mysterious parameter should return a list of messages', function () {
 
-    const whereIsMyMind = "???";
+    const whereIsMyMind = [
+      {sex: 4, name: "William"}, {sex: 4, name: "Gaius"}, {sex: 4, name: "Lee"}, 
+      {sex: 9, name: "Kara"}, {sex: 9, name: "Laura"},
+      {sex: 5, name: "Number six"}, {sex: 5, name: "Number height"}
+    ];
 
     const output = [
       "0 not known character(s) ",
